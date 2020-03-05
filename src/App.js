@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 const urlApi = "https://swapi.co/api/";
@@ -24,6 +24,7 @@ const Options = () => {
                 {item.name}
             </option>
         );
+        return false;
     });
     return dataReturn;
 };
